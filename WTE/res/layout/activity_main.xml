@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wte"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.activities.wte.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.Space
+                android:id="@+id/space1"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#CCBDBDBD"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bordered"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".8"
+                        android:ems="10" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".2"
+                        android:src="@drawable/abc_ic_search" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bordered" >
+
+                    <ImageButton
+                        android:id="@+id/cameraButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/moreButton"
+                        android:onClick="cameraClick"
+                        android:src="@android:drawable/ic_menu_camera" />
+
+                    <ImageButton
+                        android:id="@+id/moreButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@android:drawable/ic_dialog_dialer" />
+
+                    <ImageButton
+                        android:id="@+id/randomButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/moreButton"
+                        android:src="@android:drawable/ic_menu_help" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/imageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/recent_top"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <include
+                        android:id="@+id/image1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="16dp"
+    					android:layout_marginRight="16dp"
+                        layout="@layout/imagelayout" />
+
+                    <include
+                        android:id="@+id/image2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="16dp"
+    					android:layout_marginRight="16dp"
+                        layout="@layout/imagelayoutflip" />
+
+                    <include
+                        android:id="@+id/image3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="16dp"
+    					android:layout_marginRight="16dp"
+                        layout="@layout/imagelayout" />
+
+                    <include
+                        android:id="@+id/image4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="16dp"
+    					android:layout_marginRight="16dp"
+                        android:layout_marginBottom="40dp"
+                        layout="@layout/imagelayoutflip" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
