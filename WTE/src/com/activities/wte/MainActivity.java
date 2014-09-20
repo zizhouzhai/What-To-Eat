@@ -112,4 +112,14 @@ public class MainActivity extends ActionBarActivity {
     	
     }
     
+    /* addRestaurant function for the add restaurant button
+     * when clicked, starts up the series of activities to add a new restaurant
+     */
+    public void addRestaurant(View view){
+    	
+    	Intent addRestaurantIntent = new Intent(this,NewRestaurantPhotoActivity.class);
+    	startActivity(addRestaurantIntent);
+    	
+    }
+    
 }

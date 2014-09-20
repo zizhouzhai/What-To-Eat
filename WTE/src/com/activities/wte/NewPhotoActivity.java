@@ -1,6 +1,5 @@
 package com.activities.wte;
 
-import android.R.color;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,8 +10,6 @@ import android.graphics.Shader.TileMode;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class NewPhotoActivity extends ActionBarActivity {

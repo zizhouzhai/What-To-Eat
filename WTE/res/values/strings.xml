@@ -7,8 +7,9 @@
     <string name="restaurant_name">Restaurant Name</string>
     <string name="author">Author Name</string>
     <string name="recent_top">Recent Top Dishes</string>
-    <string name="title_activity_new_photo">Add a new Meal</string>
-    <string name="ok">Ok</string>
+    <string name="title_activity_new_photo">Add a New Meal</string>
     <string name="photo_name">Photo\'s Name</string>
+    <string name="title_activity_new_restaurant">Add a New Restaurant</string>
+    <string name="input_photo_prompt">Please select a photo for your new Restaurant</string>
 
 </resources>
