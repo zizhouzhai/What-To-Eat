@@ -11,5 +11,12 @@
     <string name="photo_name">Photo\'s Name</string>
     <string name="title_activity_new_restaurant">Add a New Restaurant</string>
     <string name="input_photo_prompt">Please select a photo for your new Restaurant</string>
+    <string name="title_activity_new_restaurant_name">Add a New Restaurant</string>
+    <string name="prompt_restaurant_name">Restaurant Name</string>
+    <string name="title_activity_new_restaurant_address">Add a New Restaurant</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="find">Find</string>
+    <string name="next">Next</string>
+    <string name="title_activity_lookup_address">Searching for Addresses</string>
 
 </resources>

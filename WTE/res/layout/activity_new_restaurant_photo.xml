@@ -1,62 +1,50 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BDBDBD"
+    android:orientation="vertical"
     tools:context=".NewRestaurantPhotoActivity" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/previewView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@android:drawable/gallery_thumb"
+            android:onClick="pickPhoto"
+            android:src="@android:drawable/ic_menu_camera" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:orientation="vertical" >
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bordered"
+        android:gravity="center"
+        android:text="@string/input_photo_prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="fill_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/bordered"
-            android:gravity="center"
-            android:text="@string/input_photo_prompt"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:onClick="acceptPhoto"
+            android:text="@string/next" />
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <ImageView
-                android:id="@+id/previewView"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
-                android:layout_marginTop="48dp"
-                android:layout_centerHorizontal="true"
-                android:background="@android:drawable/gallery_thumb"
-                android:onClick="pickPhoto"
-                android:src="@android:drawable/ic_menu_camera" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="48dp"
-                android:text="@android:string/ok" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>

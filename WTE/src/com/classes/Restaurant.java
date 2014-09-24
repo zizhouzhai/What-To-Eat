@@ -1,6 +1,7 @@
 package com.classes;
 
 import com.parse.ParseClassName;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 
 @ParseClassName("Restaurant")
@@ -20,10 +21,6 @@ public class Restaurant extends ParseObject{
 
 	public void setRestaurantName(String restaurantName) {
 		put("restaurantName", restaurantName);
-	}
-
-	public String getObjectId(){
-		return getObjectId();
 	}
 	
 	public int getRestaurantRating(){
@@ -55,7 +52,15 @@ public class Restaurant extends ParseObject{
 	}
 	
 	public void setLongitude(double longitude){
-		put("latitude", longitude);
+		put("longitude", longitude);
+	}
+	
+	public ParseFile getPhotoFile() {
+		return getParseFile("photo");
+	}
+
+	public void setPhotoFile(ParseFile file) {
+		put("photo", file);
 	}
 	
 }
